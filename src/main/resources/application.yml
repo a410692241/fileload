@@ -1,0 +1,23 @@
+server:
+  port: 8086
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+fdfs:
+  connect-timeout: 1000
+  #上传缩略图的高宽
+  thumb-image:
+    height: 200
+    width: 200
+  pool:
+    jmx-enabled: false
+    #trake服务地址
+  tracker-list:
+  - 192.168.9.128:22122
+
+
